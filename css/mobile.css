@@ -1,0 +1,91 @@
+@media only screen and (max-width: 768px) {
+  /* bố cụ của phần navbar */
+  .navi {
+    display: grid !important;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  /* xóa viền 2 bên của các phần tử navbar */
+  li1 {
+    border-left: 0 solid rgba(72, 76, 76, 0.087);
+    border-right: 0 solid rgba(72, 76, 76, 0.087);
+  }
+  /* xóa phần tử chính giữa của navbar */
+  .center {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  /* bố cục phần mục tiêu và thông tin */
+  .container-as2 {
+    grid-template-columns: 100%;
+    margin: 0 20px;
+  }
+  /* bố cục của 6 khôi nội dung */
+  .grid-container {
+    display: flex;
+    height: auto;
+    margin: 0 20px;
+  }
+  .border1 {
+    width: 100%;
+  }
+  /* bố cụ phần chứng chỉ */
+  .row1 {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+  /* thêm viền trên vào xóa viển trái cho phần tử thứ 2 ở phần chứng chỉ  */
+  .box-2 {
+    padding-left: 0;
+    border-left: solid 0 rgba(72, 76, 76, 0.205);
+    border-top: solid 1.5px rgba(72, 76, 76, 0.205);
+  }
+  /* bố cục của dự án */
+  .du-an {
+    grid-template-columns: 100%;
+    margin: 0 20px;
+  }
+  /* căn phần text"dự án" sang trái */
+  .can-trai {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  /* bố cục của hàng 2 trong các khối text dự án */
+  .sap-xep {
+    display: grid !important;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .text-de-muc {
+    padding-left: 20px;
+  }
+  /* thứ tự của các khối trong phần dự án */
+  .hinh1 {
+    order: 1;
+  }
+  .hinh2 {
+    order: 3;
+  }
+  .hinh3 {
+    order: 5;
+  }
+  .hop1 {
+    order: 2;
+  }
+  .hop2 {
+    order: 4;
+  }
+  .hop3 {
+    order: 6;
+  }
+  /* xóa phần text sau icon trong footer */
+  .small {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+}

@@ -1,0 +1,45 @@
+@media only screen and (max-width: 992px) {
+  /* ẩn avatar */
+  .avatar {
+    display: none;
+  }
+  .center {
+    width: 25px;
+  }
+  /* thêm viền phải cho các phần tử navbar */
+  li1 {
+    border-right: 1px solid rgba(72, 76, 76, 0.087);
+  }
+  /* chỉnh bố cục của 6 khối thành 2 hàng dọc */
+  .grid-container {
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 1100px;
+  }
+  .border1 {
+    width: 40%;
+  }
+  /* chỉnh bố cụ phần chứng chỉ */
+  .row1 {
+    display: flex;
+    gap: 20px;
+  }
+  .box {
+    display: grid;
+  }
+  /* thêm viền trái hàng 1 của phần chứng chỉ */
+  .box-2 {
+    padding-left: 20px;
+    border-left: solid 1.5px rgba(72, 76, 76, 0.205);
+  }
+  .anh {
+    width: 100%;
+    height: auto;
+  }
+  .three {
+    width: 50%;
+  }
+}

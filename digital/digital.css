@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* canh chỉnh bố cục laptop */
+body {
+  background-color: rgba(0, 0, 255, 0.644);
+  display: flex;
+}
+/* canh chỉnh 4 khối nội dung trong section */
+section {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 20px 20px 0 20px;
+  column-gap: 20px;
+}
+/* phần time line */
+aside {
+  width: 35%;
+  margin: 20px 20px 20px 20px;
+  background-color: white;
+}
+/* tạo màu nền và canh lề cho 4 khối nội dung */
+.khoi {
+  background-color: white;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+/* thứ tự 4 khối */
+.goals {
+  order: 1;
+}
+.scopes {
+  order: 3;
+}
+.team {
+  order: 2;
+}
+.primary {
+  order: 4;
+}
+/* font chữ h1 */
+h1 {
+  color: blue;
+  border-bottom: 1px gray solid;
+  padding: 10px 0 10px 10px;
+}
+/* font chữ tiêu đề */
+.tieu-de {
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+/* tạo biểu tượng icon */
+.item:before {
+  font-family: Material Icons;
+  content: "\e3a0";
+  font-size: 60px;
+  margin-top: 20px;
+  padding-left: 25px;
+  float: left;
+  clear: both;
+}
+/* bố cục cho icon và nội dung */
+.tong {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  border-bottom: 1px gray solid;
+  margin: 0 10px;
+}
+.canh-giua {
+  padding: 10px 0 10px 25px;
+}
+/* bố cục của khối nội dung scopes */
+h3 {
+  margin-bottom: 20px;
+}
+.box {
+  padding: 10px 0 20px 20px;
+}
+/* tạo biểu tượng icon và bố cục nội dung*/
+.bieu-tuong:before {
+  font-family: Material Icons;
+  content: "\e7fd";
+  font-size: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+  float: left;
+  clear: both;
+}
+.thanh-vien {
+  padding: 10px 0 10px 25px;
+}
+.bao {
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+/* bố cục nội dung và tạo vòng tròn bao số ở giữa cho timeline */
+.ky-hieu:before {
+  font-family: Material Icons;
+  content: "\e887";
+  font-size: 30px;
+  margin-top: 20px;
+  padding-left: 25px;
+  float: left;
+  clear: both;
+}
+.text {
+  padding: 10px 0 10px 25px;
+}
+.canh-dong {
+  padding: 10px 0 10px 25px;
+  border-bottom: 1px solid gray;
+}
+.vong {
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+.stt {
+  font-size: 25px;
+  color: white;
+}
+/*bố cục cho điện thoại vs tablet
+ vì đề bài bố cục nội dung của tablet vs điện thoại giống nhau nên làm chung cả 2 */
+@media only screen and (max-width: 992px) {
+  /* bố cục toàn diện theo đề bài */
+  body {
+    display: grid;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  /* thứ tự các khội nội dung */
+  .goals {
+    order: 1;
+  }
+  .scopes {
+    order: 2;
+  }
+  .team {
+    order: 3;
+  }
+  .primary {
+    order: 4;
+  }
+  /* bố cục icon và nội dung */
+  .tong {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .item:before {
+    margin-left: 50%;
+    padding-left: 0;
+  }
+  .bao {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .bieu-tuong:before {
+    margin-left: 50%;
+    padding-left: 0;
+  }
+  .ky-hieu:before {
+    margin-left: 50%;
+    padding-left: 0;
+  }
+  /* tạo đường viền đứt ở dưới các dòng nội dung của timeline */
+  .canh-dong {
+    border-bottom: 1px rgb(78, 141, 178) dashed;
+  }
+}

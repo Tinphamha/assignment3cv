@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* gắng độ rộng cho web */
+body {
+  width: 100%;
+}
+
+/* chỉnh size ảnh bìa với chỉnh tên cho lên trên ảnh */
+.anh-bia {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.ten {
+  position: absolute;
+  margin-top: -250px;
+  margin-left: calc(50% - 92px);
+  color: white;
+  display: grid;
+}
+/* canh chỉnh dòng chữ memo dưới HọTên vào giữa */
+.memo {
+  justify-self: center;
+}
+/* canh chỉnh navi vào giữa và chỉnh icon cùng với text của navi */
+.navi {
+  justify-content: center;
+  font-size: 12px;
+}
+li1 {
+  width: auto;
+  height: auto;
+  border-left: 1px solid rgba(72, 76, 76, 0.087);
+  padding: 10px;
+}
+.center {
+  padding: 0;
+  width: 250px;
+  text-align: center;
+}
+/* canh chỉnh vị trí bố cục ảnh đại diện */
+.navi-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  border: 10px solid white;
+  border-radius: 50%;
+}
+/* tạo màu cho các icon */
+.color {
+  color: deepskyblue;
+  text-transform: uppercase;
+}
+/* tạo màu cho phần text trong navi */
+span {
+  color: black;
+  text-transform: uppercase;
+}
+/* căn chỉnh vị trí cho phần mục tiêu nghề nghiệp và thông tin cá nhân */
+.container-as2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  line-height: 1.7;
+}
+.tieu-de {
+  padding-top: 50px;
+}
+.muc-tieu {
+  padding: 20px 20px;
+  background-color: rgba(72, 76, 76, 0.205);
+}
+.thong-tin {
+  padding: 0 100px;
+  background-color: rgba(2, 2, 2, 0.201);
+}
+/* canh chỉnh chiều cao của hàng cho nội dung bên trong của mục tiêu nghề nghiệp và thông tin cá nhân */
+.line-height {
+  padding-top: 20px;
+}
+/* canh vị trí cho icon của phần thông tin cá nhân */
+.icon {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+/* phần nhập email */
+.nhap-email {
+  padding: 20px 20px;
+  background-color: rgba(2, 2, 2, 0.201);
+  width: 100%;
+  height: auto;
+}
+.nhap-vao {
+  width: 100%;
+  border-radius: 5px;
+  margin: 20px 20px 0 0;
+}
+.sub {
+  background-color: rgb(49, 123, 167);
+  color: white;
+  width: auto;
+  padding: 4px;
+  border-radius: 5px;
+}
+.text-nho {
+  color: rgb(74, 70, 70);
+  font-size: 10px;
+}
+/* canh vị trí cho cách phần nội dung của kinh nghệm, hoc vấn,... */
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+.border1 {
+  border: 1px solid rgba(72, 76, 76, 0.087);
+  padding: 20px;
+}
+/* canh chỉnh tỉ lệ của icon vs các đề mục kinh nghiệm, học vấn,.. */
+.ti-le-7-3 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+/* phần view more */
+.xem-them:before {
+  font-family: Material Icons;
+  content: "\e5c5";
+  font-size: 20px;
+  color: black;
+  vertical-align: middle;
+}
+.xem-them {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(224, 227, 147);
+  width: 35%;
+  border-radius: 10px;
+}
+/* chỉnh size cho icon ở phần đề mục kinh nghiệm, học vấn */
+.big-icon {
+  font-size: 25px;
+}
+/* chỉnh size chữ cho đề mục kinh nghiệm, học vấn,... */
+.size-h2 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+/* decor chữ hiện tại */
+.decor-text {
+  background-color: deepskyblue;
+  color: white;
+  width: auto;
+  padding: 0 7px;
+  border-radius: 4px;
+}
+/* canh chỉnh phần tử li và tạo chấm xanh cho đầu phần tử */
+li {
+  padding: 20px 0;
+}
+ul {
+  list-style-type: none;
+  position: relative;
+}
+li::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: solid 3px deepskyblue;
+  border-radius: 50%;
+  margin-left: -15px;
+  margin-top: 2px;
+}
+/* canh khoảng cách giữa dòng cột mốc thời gian và phần text nội dung */
+.time {
+  padding-bottom: 10px;
+}
+/* tạo vòng tròn xanh bao quanh các icon của phần sở thích */
+.vong {
+  width: 25px;
+  height: 25px;
+  border: 1px solid deepskyblue;
+  border-radius: 50%;
+}
+/* canh cho các icon loạt vào giữa vòng xanh */
+.color-icon {
+  color: deepskyblue;
+  padding-left: 6px;
+  padding-top: 6px;
+}
+/* canh chỉnh cho cách icon và phần text tương ứng hợp lại vs nhau theo chiều ngang */
+.can-ngang {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+/* tạo phần level và canh lề cho nó */
+.level-container {
+  margin: 10px 0;
+  gap: 5px;
+}
+.level {
+  width: 35px;
+  height: 4px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+/* màu sắc của level */
+.blue {
+  background-color: deepskyblue;
+}
+.gray {
+  background-color: gray;
+}
+/* canh chỉnh vị trí bố cục cho phần chứng chỉ */
+.chung-chi {
+  background-color: rgba(72, 76, 76, 0.201);
+
+  padding: 20px 20px 0 20px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.row1 {
+  padding: 20px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: solid 1.5px rgba(72, 76, 76, 0.205);
+}
+.anh {
+  width: 150px;
+  height: auto;
+}
+.box {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  gap: 15px;
+}
+.three {
+  margin-top: 20px;
+}
+/* canh chỉnh bố cụ cho phần dự án */
+.du-an {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  column-gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.hinh {
+  margin-top: 30px;
+  width: 100%;
+}
+/* bố cục phần text đặt dưới ảnh trong mục dự án */
+.text-de-muc {
+  font-size: 12px;
+  padding: 10px 2px;
+  border-bottom: 1px solid rgba(72, 76, 76, 0.087);
+}
+.sap-xep {
+  font-size: 10px;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(72, 76, 76, 0.087);
+}
+.table1 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  font-size: 10px;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(72, 76, 76, 0.087);
+}
+.vien-canh {
+  border: 1px solid rgba(72, 76, 76, 0.087);
+}
+/* căn trái cho dòng text dự án */
+.can-trai {
+  margin-left: 170px;
+  margin-top: 30px;
+}
+/* tạo bố cục cho footer */
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgba(72, 76, 76, 0.201);
+  height: 50px;
+  align-items: end;
+  justify-content: center;
+  font-size: 25px;
+}
+/* căn giữa cho phần text vs icon theo chiều dọc */
+
+.small {
+  font-size: 10px;
+  align-self: center;
+}
+/* xóa gạch chân cho phần thẻ a và thêm thuộc tính hover */
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background-color: azure;
+}
